@@ -36,4 +36,22 @@ public class Payload {
 //	        System.out.println(jsonOutput);
 			return jsonOutput;
 	}
+	
+	public static Object registration() {
+		String json ="{\r\n"
+				+ "  \"android_device_token\": \"string\",\r\n"
+				+ "  \"ios_device_token\": \"string\",\r\n"
+				+ "  \"business_name\": \"string\",\r\n"
+				+ "  \"name\": \"Ankit Sharma\",\r\n"
+				+ "  \"district_id\": 1,\r\n"
+				+ "  \"sub_district_id\": 2,\r\n"
+				+ "  \"is_business\": true,\r\n"
+				+ "  \"phone_number\": \"9876543210\",\r\n"
+				+ "  \"password\": \"secret123\",\r\n"
+				+ "  \"email\": \"ankit@example.com\",\r\n"
+				+ "  \"image\": \"cart.png\"\r\n"
+				+ "}";
+			return json;
+		
+	}
 }

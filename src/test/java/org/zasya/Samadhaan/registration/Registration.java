@@ -14,7 +14,7 @@ public class Registration extends BasePage{
 		baseURI();
 		String response = given().log().all()
 				.header("Content-Type", "application/json")
-				.header("Accept", "application/json").body(Payload.loginCredentials())
+				.header("Accept", "application/json").body(Payload.registration())
 				.when().post("/api/login")
 				.then().assertThat().statusCode(200).body("message", equalTo("Login successfully."))
 				.header("server", "cloudflare").extract().response().asString();

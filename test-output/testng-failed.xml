@@ -5,7 +5,8 @@
     <classes>
       <class name="org.zasya.Samadhaan.login.Login">
         <methods>
-          <include name="userInvalidLogin"/>
+          <include name="userLogin"/>
+          <include name="setup"/>
         </methods>
       </class> <!-- org.zasya.Samadhaan.login.Login -->
     </classes>
